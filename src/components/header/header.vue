@@ -33,6 +33,7 @@
         <div class="detail" v-show="detailShow">
             <div class="detail-wrapper clearfix">
                 <div class="detail-main">
+                    <v-star :size="24" :score="seller.score"></v-star>
                 </div>
             </div>
             <div class="detail-close" @click="hideDetail">
@@ -45,6 +46,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+    import star from '../start/star.vue'
     export default{
         data () {
             return {
@@ -56,6 +58,9 @@
             seller: {
                 type:   Object
             }
+        },
+        components: {
+            'v-star': star
         },
         created (){
             this.classMap=['decrease','discount','special','invoice','guarantee']
