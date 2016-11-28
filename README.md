@@ -1,6 +1,6 @@
-# mysell
+# myseller
 
-> mysell
+> myseller
 
 ## Build Setup
 
